@@ -1,0 +1,102 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+    font-family: 'Bebas Neue', cursive;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-size: 2.0em;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}:hover{
+    color:#FFF;
+}
+
+/*_______________ FILME PRINCIPAL _______________*/
+
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)100%), url("/img/rickandmorty.jpg");
+    color: #FFF;
+
+    height: 506px;
+    background-size: cover;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
+}
+
+.filme-principal .descricao{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.filme-principal .titulo{
+    margin-top: 12%;
+    font-size: 56px;
+}
+
+.filme-principal .container .botoes .botao{
+    background-color:#FFFFFF;
+    
+    border: 0px solid transparent;
+    border-radius: 4px;
+    
+    padding: 0.8rem 2rem 0.8rem 2.4rem;
+    margin-right: 1rem;
+    
+    font-size: 1em;
+    font-weight: bold;
+
+    color: black;
+
+    cursor: pointer;
+
+    transition: 0.4s ease all;
+    
+}
+
+.filme-principal .container .botoes .botao:hover{
+    background-color: #AAA;
+}
+
+.filme-principal .container .botoes .botao:nth-child(2){
+    background-color: #6d6d6eb3;
+    color: #FFFFFF;
+}
+
+.filme-principal .container .botoes .botao:nth-child(2):hover{
+    background-color: #6d6d6663;
+}
+
+.botao i{
+    margin-right: 5px;
+}
